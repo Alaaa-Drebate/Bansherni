@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:text="@string/confirmation_dialog"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headline"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:text="@string/are_you_sure_you_want_to_delete"
+        />
+
+
+
+    <TextView
+        android:id="@+id/yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/desc"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/primaryTextColorDark"
+        android:text="@string/yes"/>
+    <TextView
+        android:id="@+id/no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/yes_btn"
+        android:layout_below="@id/desc"
+        android:paddingBottom="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/no"/>
+
+
+
+</RelativeLayout>

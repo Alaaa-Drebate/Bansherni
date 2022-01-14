@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بنشرنا</string>
+    <string name="register">انشاء حساب</string>
+    <string name="login_email_hint">البريد الالكتروني</string>
+    <string name="login_password_hint">كلمة السر</string>
+    <string name="signup_login_hint">لديك حساب مسبقا؟ قم بتسجي ادخول</string>
+    <string name="login_signup_hint">ليس لديك حساب ؟ قم بانشاء حساب</string>
+    <string name="name_hint">الاسم</string>
+    <string name="hint_mobile_number">رقم الجوال</string>
+    <string name="hint_password">كلمة السر</string>
+    <string name="hint_email">البريد الالكتروني</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="no_orders_placeholder">لا يوجد لديك طلبات مسبقة</string>
+    <string name="status_new">جديد</string>
+    <string name="status_rejected">مرفوض</string>
+    <string name="status_processing">تتم امعالجة</string>
+    <string name="status_completed">اكتمال</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="are_you_sure_you_want_to_delete">"هل انت متأكد انك تريد حذف هذا الطلب؟ "</string>
+    <string name="confirmation_dialog">تأكيد</string>
+    <string name="choose_new_status">تغيير حالة الطلب</string>
+    <string name="ask_for_help">اطلب المساعدة</string>
+    <string name="please_select_type">الرجاء اختيار نوع المشكلة التي لديك</string>
+    <string name="can_you_specify">هل يمكنك اضافة المزيد من التفاصيل ؟</string>
+    <string name="extra_details">تفاصيل اضافية</string>
+    <string name="refresh_location">تحديث الموقع</string>
+    <string name="send">ارسال</string>
+    <string name="cancel">الغاء</string>
+    <string name="must_chose_new_status">يجب عليك اختيار حالة جديد</string>
+    <string name="chose_at_least_one_status">اختر حالة اولا</string>
+    <string name="gps_settings_message">خدمة تحديد المواقع غير مفعلة لديك ا هب تاى الاعدادات وقم بتفعيل خدمات الموقع اولا</string>
+    <string name="gps_settings_title">اعدادات الموقع</string>
+    <string name="settings">الاعدادات</string>
+    <string name="type_selection_message">يجب عيك اختيار نوع المشكلة المطروحة قبل عملية حفظ الطلب</string>
+    <string name="location_selection_message">يوجد مشكلة في تحديد الموقع الرجاء الضغط على زر تحديث الموقع لاعادة المحاولة</string>
+    <string name="whatsapp_not_existed">ليس لديك تطبيق واتساب على جهازك المحمول</string>
+    <string name="car_location">موقع السيارة</string>
+    <string name="phone_missing_message">الرجاء ادخال رقم الجوال</string>
+    <string name="password_missing_message">الرجاء ادخال كلمة السر</string>
+    <string name="name_missing_message">الرجاء ادخال الاسم</string>
+
+    <string-array name="problem_types">
+        <item>اطارات</item>
+        <item>بطارية</item>
+        <item>محرك</item>
+        <item>وقود</item>
+    </string-array>
+
+    <string name="price_unit">ر.س</string>
+    <string name="delete_user_request">حذف الطلب</string>
+    <string name="about_us_title">حول التطبيق</string>
+
+    <string name="about_us">تطبيق بنشرنا
+\n\nفكرة متدربي مادة المشروع في الكلية التقنية بحظر الباطن
+\n
+\nأسماء الطلاب
+\nعبدالله مسلط المطيري
+\nاحمد غايب الشمري
+\nوليد عبدالرحمن العنزي
+\nمناور هذيل الحربي
+\nريان احمد غازي
+\n
+\nبإشراف المدرب
+\nفيصل المطيري</string>
+
+</resources>

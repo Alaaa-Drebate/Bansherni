@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProblemDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/delete_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@color/status_rejected">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:text="@string/delete_user_request"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/info_layout"
+        android:layout_below="@id/delete_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/type_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_car_battery"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/type_icon"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="_USER_NAME"/>
+
+            <TextView
+                android:id="@+id/problem_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/type_icon"
+                android:layout_below="@id/user_name"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:text="_PROBLEM_DETAILS"/>
+
+            <TextView
+                android:id="@+id/status_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/type_icon"
+                android:layout_below="@id/problem_details"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="12sp"
+                android:text="@string/status_new"
+                android:textColor="@color/status_new"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_below="@id/problem_details"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_PRICE"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_layout"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_PHONE_NUMBER"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:padding="16dp"/>
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_whatsapp"
+            android:contentDescription="whatsapp icon"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/phone_layout"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
